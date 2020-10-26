@@ -1,0 +1,23 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    background-color: beige;
+  }
+  
+  h1 {
+    font-style: normal;
+    color: darkblue;
+  }
+  
+  video {
+    width: 640px;
+    height: 480px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 1em;
+  }
+  

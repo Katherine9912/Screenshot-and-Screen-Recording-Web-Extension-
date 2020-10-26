@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Screen Reorder and Screenshot",
+  "author":"Wei Yin Lee",
+  "description": "By using screen recorder, users can record the voice, screen and so on.",
+  "icons": {
+    "512": "icon-48.png"
+  },
+    "browser_action": {
+        "default_title": "Screen Reorder and Screenshot",
+        "default_popup": "index.html",
+  "browser_style": true},
+
+   "permissions": [
+    "activeTab",
+    "tabs",
+    "downloads",
+    "<all_urls>",
+    "storage",
+    "unlimitedStorage",
+    "clipboardWrite",
+    "cookies",
+       "idle",
+       "nativeMessaging",
+       "geolocation"
+  ],
+    "background": {
+    "page": "index.html"
+  },
+    "web_accessible_resources": [
+        "icon-48.png"
+    ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+        "all_frames": true,
+      "js": ["script.js"],
+        "css":["style.css"]
+    }
+  ],
+  "optional_permissions": ["downloads"]
+
+}
